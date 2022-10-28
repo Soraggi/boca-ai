@@ -47,7 +47,11 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      adapter: 'sails-mysql',
+      adapter: 'sails-mongo',
+      //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db',
+      //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db?retryWrites=true&w=majority',
+      url: 'mongodb://woohoo:Woohoo2306@ac-uc0kylp-shard-00-00.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-01.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-02.btd6bhj.mongodb.net:27017/ai-db?ssl=true&replicaSet=atlas-gm31d0-shard-0&authSource=admin&retryWrites=true&w=majority',
+      // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
@@ -184,7 +188,11 @@ module.exports = {
     * > (For a full list, see https://sailsjs.com/plugins/sessions)            *
     *                                                                          *
     ***************************************************************************/
-    adapter: '@sailshq/connect-redis',
+     adapter: 'connect-mongo',
+     //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db',
+     //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db?retryWrites=true&w=majority',
+     url: 'mongodb://woohoo:Woohoo2306@ac-uc0kylp-shard-00-00.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-01.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-02.btd6bhj.mongodb.net:27017/ai-db?ssl=true&replicaSet=atlas-gm31d0-shard-0&authSource=admin&retryWrites=true&w=majority',
+    //adapter: '@sailshq/connect-redis',
     // url: 'redis://user:password@localhost:6379/dbname',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
@@ -385,10 +393,11 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     adapter: require('skipper-s3'),
-    // key: 'fake-aws-keyagsd8agsdagsdhagsd',
-    // secret: 'fake-aws-secretasdg8asgd8gsd8asgd8',
-    // bucket: 'uploaded_photos_of_things_prod',
-    // region: 'us-east-1',
+     key: 'AKIAVAFAXQHCZ6NLS5AU',
+     secret: 'F+bHbCiRcWLlXsxtSeodzv9Y5F5mXXIZd3t5fYvm',
+     bucket: 'boca-ai-bucket',
+     region: 'us-east-1',
+     headers: { 'x-amz-acl': 'public-read' }
     //--------------------------------------------------------------------------
     //  /\   To avoid checking them in to version control, you might opt to set
     //  ||   sensitive credentials like `s3Secret` using an environment variable.

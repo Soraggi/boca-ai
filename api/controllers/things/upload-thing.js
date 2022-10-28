@@ -64,6 +64,7 @@ module.exports = {
     }
 
     // Create a new "thing" record.
+    console.log('info = ', info);
     var newThing = await Thing.create({
       imageUploadFd: info.fd,
       imageUploadMime: info.type,

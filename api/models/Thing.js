@@ -12,6 +12,7 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    id: { type: 'string', columnName: '_id' },
     imageUploadFd: {
       type: 'string',
       description: 'The Skipper file descriptor string uniquely identifying the uploaded image.',

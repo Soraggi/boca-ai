@@ -50,7 +50,7 @@ module.exports = {
       adapter: 'sails-mongo',
       //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db',
       //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db?retryWrites=true&w=majority',
-      url: 'mongodb://woohoo:Woohoo2306@ac-uc0kylp-shard-00-00.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-01.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-02.btd6bhj.mongodb.net:27017/ai-db?ssl=true&replicaSet=atlas-gm31d0-shard-0&authSource=admin&retryWrites=true&w=majority',
+      url: 'mongodb://woohoo:Woohoo2306@ac-uc0kylp-shard-00-00.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-01.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-02.btd6bhj.mongodb.net:27017/boca-ai-db?ssl=true&replicaSet=atlas-gm31d0-shard-0&authSource=admin&retryWrites=true&w=majority',
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
@@ -191,7 +191,7 @@ module.exports = {
      adapter: 'connect-mongo',
      //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db',
      //url: 'mongodb+srv://woohoo:Woohoo2306@cluster0.btd6bhj.mongodb.net/ai-db?retryWrites=true&w=majority',
-     url: 'mongodb://woohoo:Woohoo2306@ac-uc0kylp-shard-00-00.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-01.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-02.btd6bhj.mongodb.net:27017/ai-db?ssl=true&replicaSet=atlas-gm31d0-shard-0&authSource=admin&retryWrites=true&w=majority',
+     url: 'mongodb://woohoo:Woohoo2306@ac-uc0kylp-shard-00-00.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-01.btd6bhj.mongodb.net:27017,ac-uc0kylp-shard-00-02.btd6bhj.mongodb.net:27017/boca-ai-db?ssl=true&replicaSet=atlas-gm31d0-shard-0&authSource=admin&retryWrites=true&w=majority',
     //adapter: '@sailshq/connect-redis',
     // url: 'redis://user:password@localhost:6379/dbname',
     //--------------------------------------------------------------------------
@@ -259,7 +259,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'https://ration.io',
+      'https://boca-ai.uc.r.appspot.com','http://localhost:1337'
     ],
 
 
@@ -275,7 +275,7 @@ module.exports = {
     * (https://sailsjs.com/docs/concepts/deployment/scaling)                   *
     *                                                                          *
     ***************************************************************************/
-    adapter: '@sailshq/socket.io-redis',
+    // adapter: '@sailshq/socket.io-redis',
     // url: 'redis://user:password@bigsquid.redistogo.com:9562/dbname',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
@@ -426,8 +426,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://ration.io',
-    internalEmailAddress: 'solosoyjs@gmail.com',
+    baseUrl: 'https://boca-ai.uc.r.appspot.com',
+    internalEmailAddress: 'xubuco@gmail.com',
 
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
@@ -445,7 +445,5 @@ module.exports = {
     //--------------------------------------------------------------------------
 
   },
-
-
 
 };

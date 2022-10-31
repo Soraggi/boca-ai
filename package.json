@@ -1,8 +1,8 @@
 {
-  "name": "ration",
+  "name": "boca-ai",
   "private": true,
   "version": "0.0.57",
-  "description": "a Sails application",
+  "description": "a CX Software application",
   "keywords": [],
   "dependencies": {
     "@sailshq/connect-redis": "^3.2.1",
@@ -40,9 +40,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/shawrizard/ration-2.git"
+    "url": "git://github.com/Soraggi/boca-ai.git"
   },
-  "author": "Rachael Shaw and Mike McNeil",
+  "author": "Marco Soraggi",
   "license": "MIT",
   "engines": {
     "node": "8"

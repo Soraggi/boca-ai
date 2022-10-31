@@ -1,14 +1,14 @@
-# Ration
+# Redator
 
 
 ### Demo
 
-Try the app out at https://ration.io/
+Try the app out at https://www.redatorai.com.br/
 
 
 ### Take the course
 
-Take the complete tutorial course showing how to build Ration at https://courses.platzi.com/classes/sails-js/
+Take the complete tutorial course showing how to build Redator at https://courses.platzi.com/classes/sails-js/
 
 a [Sails v1](https://sailsjs.com) application
 
